@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="css/reset.css"/>
+		<!--css reset file-->
+		<link rel="stylesheet" href="css/styles.css"/>
+		<!--main css file-->
+		<link href='//fonts.googleapis.com/css?family=Aladin|Gafata' rel='stylesheet' type='text/css'>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.spritely.js"></script><!--spritly.js for animating ship and sea waves-->
+		<script src="js/plax.js"></script><!--plax.js for animating clouds-->
+		<script src="js/wheel.js"></script><!--wheel.js animating the wheel-->
+		<!--for older browsers-->
+		<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+		<title>ERROR 404</title>
+		<script type="text/javascript">
+			//optins for sea waves and ship animations
+			$('document').ready(function() {
+				$('#sea-wave-1').plaxify({
+					"yRange" : 10,
+				})
+				$('#sea-wave-2').plaxify({
+					"yRange" : 30,
+					"invert" : true
+				})
+				$('#sea-wave-3').plaxify({
+					"yRange" : 10,
+					"invert" : true
+				})
+				$('#sea-wave-3').plaxify({
+					"yRange" : 10,
+					"invert" : true
+				})
+				$('#ship').plaxify({
+					"yRange" : 10,
+					"xRange" : 10,
+					"invert" : true
+				})
+				$.plax.enable({
+					"activityTarget" : $('body')
+				})
+			});
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.cloud-1').pan({//options for clouds animation
+					fps : 30,
+					speed : 0.5,
+					dir : 'left'
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		<!--begin animations-->
+		<div class="wrapper-animations">
+
+			<div class="animation-ship">
+				<div id="ship"></div>
+			</div>
+			<div id="sea-wave-1"></div>
+			<div id="sea-wave-2"></div>
+			<div id="sea-wave-3"></div>
+			<div class="cloud-1"></div>
+
+		</div><!-- end of animations-->
+
+		<!--begin content-->
+		<div class="wrapper-content">
+			<div class="container">
+				<section class="content clearfix">
+					<header>
+						<h1>ERROR 404</h1>
+					</header>
+					<!--animated wheel-->
+					<div id="wheel"></div>
+					<!-------------->
+					<p>
+						PAGE NOT FOUND.
+					</p>
+					<!--begin navigation-->
+
+				</section><!--end of content-->
+			</div><!--end of container-->
+		</div><!--end of wrapper-content-->
+
+		<!--begin footer-->
+		<div class="wrapper-footer">
+			<div class="container">
+				<footer class="clearfix">
+					<div class="footer-info">
+						<p>
+							&copy; Company All Rights Reserved.
+						</p>
+
+					</div>
+
+					<!--social icons-->
+					<div class="social-nav">
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook"></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/"><img src="images/twitter.png" alt="Twitter"></a>
+							</li>
+							<li>
+								<a href="https://plus.google.com/"><img src="images/gplus.png" alt="Google Plus"></a>
+							</li>
+							<li>
+								<a href="mailto:admin@gmail.com"><img src="images/email.png" alt="Email"></a>
+							</li>
+						</ul>
+					</div><!-- end of social icons -->
+				</footer>
+			</div><!-- end of wrapper -->
+		</div><!-- end of wrapper footer -->
+	</body>
+</html>
